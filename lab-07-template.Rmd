@@ -28,11 +28,11 @@ evals<-read.csv("data/evals.csv", row.names=1)
 ### Exercise 1
 
 ```{r viz-score}
-# add code here
+boxplot(evals$score, horizontal=TRUE, main="Distribution of Scores")
+
 ```
 
-*Add your narrative here.*
-
+The data is skewed to the right, this means that the students are relatively happy with the courses. The whiskers are quite wide indicating there is a wide range of responses as well as three outliers on the left.
 ### Exercise 2
 
 ```{r viz-score-bty, eval = FALSE}
